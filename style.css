@@ -30,6 +30,8 @@ body{
     display: flex; 
     justify-content: center;
     align-items: center;
+    position: relative;
+    
 
 }
 .infor_card{
@@ -214,11 +216,13 @@ h4{
 }
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1400px;
+    margin:0 auto;
+    padding: 0 2rem;
 }
+
 .project-card{
     background: #111118;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -336,3 +340,20 @@ h4{
     color: #0a0a0f;
     transform: rotate(90deg);
 }
+@media(max-width: 1200px){
+    .project-grid{
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 1.2rem;
+    }
+    .project-card{
+        width: 100%;
+    }
+    .project-card img{
+        height: 180px;
+        object-fit: cover;
+    }
+}
+
+
+
