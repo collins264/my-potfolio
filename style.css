@@ -342,7 +342,7 @@ h4{
     *{box-sizing: border-box;}
 }
 html, body{
-    overflow: hidden !important;
+    
     width: 100% !important;
 
 }
