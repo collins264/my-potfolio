@@ -339,21 +339,49 @@ h4{
     background: #00f5a0;
     color: #0a0a0f;
     transform: rotate(90deg);
+    *{box-sizing: border-box;}
 }
-@media(max-width: 1200px){
+html, body{
+    overflow: hidden !important;
+    width: 100% !important;
+
+}
+img{max: width 100%; height: auto;}
+.project-grid{
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 2rem !important;
+    padding: 0 2rem !important;
+}
+@media(max-width: 1024px){
     .project-grid{
-        grid-template-columns: 1fr;
-        padding: 0 1rem;
-        gap: 1.2rem;
-    }
-    .project-card{
-        width: 100%;
-    }
-    .project-card img{
-        height: 180px;
-        object-fit: cover;
+        grid-template-columns: repeat(2,1fr) !important;
     }
 }
+@media(max-width: 640px){
+    .project-grid{
+        grid-template-columns: 1fr !important;
+        padding: 0 1rem !important;
+        gap: 1.2rem !important;
+    }
+
+footer{
+    flex-direction: column !important;
+    gap: 2rem !important;
+    text-align: center !important;
+}
+h1{font-size: 1.8rem !important;}
+h2{font-size: 1.4rem !important;}
+ .btn, button{
+    width: 100% !important;
+    padding: 16px !important;
+ }
+
+}
+
+
+   
+
 
 
 
